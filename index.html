@@ -1,107 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sportswear Brand Shel Sam</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shel Sam - Sportswear Brand</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
 
-  <body class="bg-gray-100 text-gray-800">
-    <!-- En-tête -->
-    <header class="bg-white shadow-md sticky top-0 z-10">
-      <div class="max-w-6xl mx-auto p-4 flex justify-between items-center">
-        <h1 class="text-2xl font-extrabold text-gray-900">
-          Sportswear Brand Shel Sam
-        </h1>
-        <nav>
-          <a href="#produits" class="mx-3 hover:text-blue-600">Produits</a>
-          <a href="#contact" class="mx-3 hover:text-blue-600">Contact</a>
-        </nav>
+  <!-- En-tête -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">Shel Sam</h1>
+      <nav class="space-x-6">
+        <a href="#produits" class="hover:text-blue-600">Produits</a>
+        <a href="#apropos" class="hover:text-blue-600">À propos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Héro -->
+  <section class="text-center py-16 bg-blue-100">
+    <h2 class="text-4xl font-bold mb-4">Sportswear Brand Shel Sam</h2>
+    <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+      Des vêtements de sport modernes, confortables et stylés conçus pour la performance et la confiance.
+    </p>
+  </section>
+
+  <!-- Produits -->
+  <section id="produits" class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- Short -->
+    <div class="bg-white rounded-2xl shadow p-4">
+      <img src="short.jpg" alt="Short" class="w-full h-48 object-cover rounded-lg" />
+      <h3 class="text-xl font-semibold mt-4">Short</h3>
+      <p class="text-gray-600">Confortable et idéal pour l’entraînement.</p>
+      <div class="text-center mt-4">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Voir le produit</button>
       </div>
-    </header>
+    </div>
 
-    <!-- Section d'accueil -->
-    <section class="text-center py-16 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-      <h2 class="text-4xl font-bold mb-4">Performance et style pour les athlètes modernes</h2>
-      <p class="text-lg">Découvrez nos vêtements conçus pour dépasser vos limites.</p>
-    </section>
-
-    <!-- Section Produits -->
-    <section id="produits" class="max-w-6xl mx-auto py-16">
-      <h3 class="text-3xl font-bold text-center mb-12">Nos produits</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-4">
-        
-        <!-- Short -->
-        <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
-          <img src="image-short.jpg" alt="Short" class="w-full h-48 object-cover" />
-          <div class="p-4 text-center">
-            <h4 class="text-xl font-bold">Short d'entraînement</h4>
-            <p class="text-gray-600">Confort et mobilité pour chaque séance.</p>
-
-            <div class="text-center mt-4">
-              <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-                Voir le produit
-              </button>
-            </div>
-          </div>
-
-        <!-- T-shirt -->
-        <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
-          <img src="image-tshirt.jpg" alt="T-shirt" class="w-full h-48 object-cover" />
-          <div class="p-4 text-center">
-            <h4 class="text-xl font-bold">T-shirt sportif</h4>
-            <p class="text-gray-600">Respirant et léger pour la performance.</p>
-
-            <div class="text-center mt-4">
-              <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-                Voir le produit
-              </button>
-            </div>
-          </div>
-
-        <!-- Hoodie -->
-        <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
-          <img src="image-hoodie.jpg" alt="Hoodie" class="w-full h-48 object-cover" />
-          <div class="p-4 text-center">
-            <h4 class="text-xl font-bold">Hoodie d’échauffement</h4>
-            <p class="text-gray-600">Chaleur et confort avant ou après l’effort.</p>
-
-               <div class="text-center mt-4">
-              <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-                Voir le produit
-              </button>
-            </div>
-          </div>
-
-
-        <!-- Casquette -->
-        <div class="bg-white shadow-lg rounded-2xl overflow-hidden">
-          <img src="image-cap.jpg" alt="Casquette" class="w-full h-48 object-cover" />
-          <div class="p-4 text-center">
-            <h4 class="text-xl font-bold">Casquette sportive</h4>
-            <p class="text-gray-600">L’accessoire parfait pour compléter ton style.</p>
-
-            <div class="text-center mt-4">
-              <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-                Voir le produit
-              </button>
-            </div>
-          </div>
-
-
+    <!-- T-shirt -->
+    <div class="bg-white rounded-2xl shadow p-4">
+      <img src="tshirt.jpg" alt="T-shirt" class="w-full h-48 object-cover rounded-lg" />
+      <h3 class="text-xl font-semibold mt-4">T-shirt</h3>
+      <p class="text-gray-600">Respirant et léger pour toutes les séances.</p>
+      <div class="text-center mt-4">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Voir le produit</button>
       </div>
-    </section>
+    </div>
 
-    <!-- Section Contact -->
-    <section id="contact" class="bg-gray-900 text-white text-center py-12">
-      <h3 class="text-3xl font-bold mb-4">Nous contacter</h3>
-      <p>Une question ? Un partenariat ? Écris-nous à <a href="mailto:contact@shel-sam.com" class="text-blue-400 underline">contact@shel-sam.com</a></p>
-    </section>
+    <!-- Hoodie -->
+    <div class="bg-white rounded-2xl shadow p-4">
+      <img src="hoodie.jpg" alt="Hoodie" class="w-full h-48 object-cover rounded-lg" />
+      <h3 class="text-xl font-semibold mt-4">Hoodie</h3>
+      <p class="text-gray-600">Chaud, doux et parfait pour le quotidien.</p>
+      <div class="text-center mt-4">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Voir le produit</button>
+      </div>
+    </div>
 
-    <!-- Pied de page -->
-    <footer class="bg-gray-800 text-gray-300 text-center py-6 text-sm">
-      © 2025 Sportswear Brand Shel Sam — Tous droits réservés
-    </footer>
-  </body>
+    <!-- Casquette -->
+    <div class="bg-white rounded-2xl shadow p-4">
+      <img src="cap.jpg" alt="Casquette" class="w-full h-48 object-cover rounded-lg" />
+      <h3 class="text-xl font-semibold mt-4">Casquette</h3>
+      <p class="text-gray-600">L’accessoire parfait pour un style sportif.</p>
+      <div class="text-center mt-4">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Voir le produit</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section À propos -->
+  <section id="apropos" class="bg-white py-16 text-center">
+    <h2 class="text-3xl font-bold text-blue-600 mb-4">À propos de Shel Sam</h2>
+    <p class="text-gray-700 max-w-3xl mx-auto px-6">
+      Fondée par des passionnés de sport, Shel Sam est une marque québécoise qui mise sur le confort,
+      la performance et le style. Chaque pièce est pensée pour t’accompagner dans tes défis, que ce soit
+      à l’entraînement, en compétition ou dans la vie de tous les jours.
+    </p>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>&copy; 2025 Shel Sam. Tous droits réservés.</p>
+  </footer>
+
+</body>
 </html>
