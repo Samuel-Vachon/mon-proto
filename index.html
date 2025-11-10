@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prototype — Ma marque de sport</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <div class="text-2xl font-extrabold">NOMMARQUE</div>
+      <nav class="space-x-6">
+        <a href="#produits" class="hover:underline">Produits</a>
+        <a href="#apropos" class="hover:underline">À propos</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <!-- Hero -->
+    <section class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Linge de sport performant — design simple.</h1>
+        <p class="text-lg mb-6">Prototype de boutique et page produit pour présenter la gamme, spécialement pour entraînements et course.</p>
+        <div class="flex gap-3">
+          <a href="#produits" class="px-5 py-3 bg-black text-white rounded-lg">Voir les produits</a>
+          <a href="#contact" class="px-5 py-3 border rounded-lg">Contact</a>
+        </div>
+      </div>
+      <div>
+        <img alt="Man running" src="https://images.unsplash.com/photo-1526403224741-3a0c6b1c6f6f?w=1200&q=80&auto=format&fit=crop" class="rounded-lg shadow-md" />
+      </div>
+    </section>
+
+    <!-- Produits -->
+    <section id="produits" class="mt-16">
+      <h2 class="text-2xl font-bold mb-6">Nos produits</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card -->
+        <article class="bg-white rounded-lg shadow p-4">
+          <img alt="Short" src="https://images.unsplash.com/photo-1520975914600-9b2f1b4f5bfb?w=800&q=80&auto=format&fit=crop" class="h-48 w-full object-cover rounded" />
+          <h3 class="mt-3 font-semibold">Short Runner</h3>
+          <p class="text-sm text-gray-600">Conception légère, séchage rapide.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-lg font-bold">49 $</div>
+            <button class="px-3 py-1 border rounded">Détails</button>
+          </div>
+        </article>
+        <!-- Duplique les cartes selon besoin -->
+        <article class="bg-white rounded-lg shadow p-4">
+          <img alt="T-shirt" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80&auto=format&fit=crop" class="h-48 w-full object-cover rounded" />
+          <h3 class="mt-3 font-semibold">T-shirt Tech</h3>
+          <p class="text-sm text-gray-600">Respirant, coupe athlétique.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-lg font-bold">39 $</div>
+            <button class="px-3 py-1 border rounded">Détails</button>
+          </div>
+        </article>
+        <article class="bg-white rounded-lg shadow p-4">
+          <img alt="Hoodie" src="https://images.unsplash.com/photo-1602810310845-6f7f5c3853b6?w=800&q=80&auto=format&fit=crop" class="h-48 w-full object-cover rounded" />
+          <h3 class="mt-3 font-semibold">Hoodie Léger</h3>
+          <p class="text-sm text-gray-600">Chaud sans être encombrant.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-lg font-bold">69 $</div>
+            <button class="px-3 py-1 border rounded">Détails</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="apropos" class="mt-16 bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-bold mb-3">À propos</h2>
+      <p class="text-gray-700">Texte court sur la vision de la marque, matériaux, durabilité, mission.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-10">
+      <h2 class="text-2xl font-bold mb-3">Contact</h2>
+      <p class="mb-4">Envie d’en savoir plus ? Envoie-nous un message.</p>
+      <!-- Exemple: remplacer action avec Formspree -->
+      <form action="https://formspree.io/f/xxx" method="POST" class="grid gap-3 max-w-md">
+        <input name="nom" placeholder="Nom" required class="p-3 border rounded" />
+        <input type="email" name="_replyto" placeholder="Email" required class="p-3 border rounded" />
+        <textarea name="message" placeholder="Message" rows="5" class="p-3 border rounded"></textarea>
+        <button type="submit" class="px-5 py-3 bg-black text-white rounded">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="mt-14 bg-white border-t">
+    <div class="max-w-6xl mx-auto px-6 py-6 text-sm text-gray-600 flex justify-between">
+      <div>© <span id="year"></span> NOMMARQUE</div>
+      <div>Made for prototype • <a href="#" class="underline">Mentions</a></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
